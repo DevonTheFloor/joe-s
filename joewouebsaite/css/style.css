@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'airstreamregular';
+  src: url("../police/Airstream-webfont.eot");
+  src: url("../police/Airstream-webfont.eot?#iefix") format("embedded-opentype"), url("../police/Airstream-webfont.woff2") format("woff2"), url("../police/Airstream-webfont.woff") format("woff"), url("../police/Airstream-webfont.ttf") format("truetype"), url("../police/Airstream-webfont.svg#airstreamregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'grutchshadedregular';
+  src: url("../police/GrutchShaded-webfont.eot");
+  src: url("../police/GrutchShaded-webfont.eot?#iefix") format("embedded-opentype"), url("../police/GrutchShaded-webfont.woff2") format("woff2"), url("../police/GrutchShaded-webfont.woff") format("woff"), url("../police/GrutchShaded-webfont.ttf") format("truetype"), url("../police/GrutchShaded-webfont.svg#grutchshadedregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 26, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url("image/back/bkgrd2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+/* line 35, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+main {
+  /*ici encadré transparent blanc*/
+  background-color: #e8e7e3;
+  opacity: 0.85;
+  margin: 10%;
+  margin-bottom: 5%;
+  border: 0.5em ridge #5fc191;
+  border-radius: 45px;
+  box-shadow: 2px 2px 5px #a4ecf1; }
+
+/* line 44, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+h1 {
+  /* ========== ICI LA COULEUR DU TITRE ================= */
+  text-align: center;
+  color: #5fc191;
+  font-family: 'airstreamregular';
+  font-size: 6em;
+  text-shadow: 2px 10px 10px #a4ecf1; }
+
+/* line 51, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+h2 {
+  border: 2px solid green;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: center;
+  font-family: 'grutchshadedregular';
+  text-shadow: 2px 2px 2px green; }
+
+/* line 59, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+p {
+  color: #5fc191;
+  text-shadow: 2px 3px 3px #a4ecf1;
+  text-align: center; }
+
+/* line 64, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#nomsite {
+  text-align: center;
+  font-size: 8em; }
+
+/* line 68, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+ol {
+  display: flex;
+  flex-direction: row; }
+
+/* line 72, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#video {
+  margin-left: 25%;
+  display: flex;
+  justify-content: center; }
+
+/* line 77, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+li {
+  list-style: none; }
+
+/* line 80, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#photo {
+  border-radius: 45%;
+  margin-top: 5%;
+  width: 9%;
+  height: 9%; }
+
+/* line 85, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+.tel {
+  display: none; }
+
+/* line 89, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+a:hover {
+  font-weight: bold;
+  color: green; }
+
+/* line 93, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#galerie-menu {
+  height: 300px;
+  width: 850px;
+  margin: 3em auto;
+  border: solid;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px gray;
+  text-align: right;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden; }
+
+/* line 108, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#galerie-menu a, #galerie-menu:hover a:focus {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 15px white;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0, 0.01, 0, 1); }
+
+/* line 121, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#galerie-menu a:hover, #galerie-menu a:focus {
+  width: 400px;
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0, 0.01, 0, 1); }
+
+/* line 127, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#galerie-menu a:first-child, #galerie-menu:hover a:focus:first-child {
+  width: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+/* line 135, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#galerie-menu a:before {
+  content: attr(title);
+  text-align: center;
+  height: 30px;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-right: 100px;
+  font-size: 30px;
+  color: white;
+  border: 1px solid gray;
+  box-shadow: 0 0 15px white;
+  background: rgba(0, 0, 0, 0.3);
+  transform: rotate(-90deg);
+  transform-origin: 17px;
+  line-height: 22px; }
+
+/* line 155, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+footer {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center; }
+
+/*--------------------------- MEDIA ----------------------------------*/
+@media screen and (max-width: 1000px) {
+  /* line 163, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  #galerie-menu {
+    border: solid;
+    border-radius: 0px;
+    box-shadow: 1px 1px 3px gray;
+    text-align: center;
+    transform: rotate(90deg); }
+  /* line 170, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  #photo {
+    width: 6%;
+    height: 6%; }
+  /* line 173, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  main {
+    margin: 6%; }
+  /* line 175, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  #nomsite {
+    font-size: 4em; }
+  /* line 177, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  h1 {
+    font-size: 3em;
+    text-align: center; } }
+
+/*======================= SMARTPHONE ================================*/
+@media screen and (max-width: 600px) {
+  /* line 185, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  body {
+    background-image: url("image/back/backSmart.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; }
+  /*.menutel{
+	display:contents;
+	font-size:bold;
+	text-align:center;}*/
+  /* line 194, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+  #video {
+    display: none; }
+  /*footer{display:none;
+	display:flex;
+	justify-content:center;*/ }
+
+/* line 199, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+ul {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column; }
+
+/* line 203, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+.navtel {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: rew; }
+
+/* line 207, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+.titre {
+  font-size: 2em; }
+
+/* line 210, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+header {
+  display: none; }
+
+/* line 214, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#bloc21 {
+  display: none; }
+
+/* line 218, /home/devon/Documents/JOE/joe-s/joewouebsaite/css/style.scss */
+#photoSmart {
+  width: 4%;
+  height: 4%; }
+
+/* rest 
+#galerie-menu {
+	border:solid;
+	border-radius:0px;
+	box-shadow:1px 1px 3px gray;
+	text-align:center;
+	height:200px;
+	width:480px;
+	
+	transform:rotate(90deg);}
+
+#galerie-menu a:hover , #galerie-menu a:focus 
+{
+	display:none;
+
+}
+
+#galerie-menu a:before 
+{
+	content:attr(title);
+	text-align:center;
+	height:8%;
+	width:200px;
+	/*position:absolute;
+	bottom:0;
+	left:0;*/
+/*padding-right:100px;
+	font-size:18px;
+	color:green;
+	border:1px solid green;
+	/*box-shadow:0 0 15px white;
+	background:rgba(0,0,0,0.3);
+	/*transform:rotate(-90deg);
+	transform-origin:17px;
+	line-height:22px;
+
+*/
+
+/*# sourceMappingURL=style.css.map */

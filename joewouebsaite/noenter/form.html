@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="">
+	<link rel="icon" type="image/x-icon" href=""/>
+</head>
+
+<body>
+	<header></header>
+	<main>
+	<style>
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    label{
+      margin-top: 5%;
+    }
+    </style>
+  <form action="advid.php" method="post">
+   <label for="h1">Page: </label>
+   <select name="h1" id="h1">
+     <option value="meca_auto">Méca Auto</option>
+     <option value="meca_moto">Méca Moto</option>
+     <option value="construc">Construction</option>
+     <option value="bricol">Bricolage</option>
+     <option value="astu_brico">Astuce Brico</option>
+     <option value="matos">Materiel</option>
+     <option value="trico">Tricot</option>
+     <option value="infor">Informatique</option>
+     <option value="audef">Auto Défense</option>
+     <option value="soin">Soin</option>
+     <option value="voyage">Voyage</option>
+     <option value="culture">Culture</option>
+     <option value="son">SON</option>
+     <option value="sortie">Sortie</option>
+     <option value="disscu">Dicussion</option>
+   </select>
+    <label for="h2">titre article: </label><input type="text" name="h2" id="h2" >
+    <label for="h2">sous chapo </label><textarea type="text" name="sschapo" id="sschapo" rows="5" cols="50"></textarea>
+    <label for="h3">titre vidéo: </label><input type="text" name="tvdo" id="tvdo" >
+    <label for="h1">description: </label><textarea type="text" name="descri" id="descri" rows="8" cols="50"></textarea>
+    <label for="link">Lien: </label><input type="text" name="link" id="link" >
+    <input type="submit" value="add">
+  </form>
+  
+  </main>
+	<footer></footer>
+	<script type="text/javascript" src=""></script>
+</body>
+
+</html>
